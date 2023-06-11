@@ -18,6 +18,6 @@ With this app:
 6. Notifications: The app provides timely notifications to both recruiters and job seekers, keeping them updated about application status changes, interview invitations, and other important events.
 7. User Profiles: Recruiters and job seekers can create personalized profiles with essential information, such as work experience, education, skills, and contact details.
 
-#Requirements
+# Requirements
 1. JAVA
 2. ANDROID STUDIO
