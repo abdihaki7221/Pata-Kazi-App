@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+    <TextView
+        android:id="@+id/skills_title"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Your Skills"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_500"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skill1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skills_title"
+        android:layout_marginTop="10dp"
+        android:hint="Enter skill 1"
+        android:inputType="text"
+        android:minHeight="48dp"
+
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/skill_txt_1"
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skill2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill1"
+        android:layout_marginTop="10dp"
+        android:hint="Enter skill 2"
+        android:inputType="text"
+        android:minHeight="48dp"
+
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/skill_txt_2"
+
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skill3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill2"
+        android:layout_marginTop="10dp"
+        android:hint="Enter skill 3"
+        android:inputType="text"
+        android:minHeight="48dp"
+
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/skill_txt_3"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skill4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill3"
+        android:layout_marginTop="10dp"
+        android:hint="Enter skill 4"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/skill_txt_4"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skill5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill4"
+        android:layout_marginTop="10dp"
+        android:hint="Enter skill 5"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+
+            android:id="@+id/skill_txt_5"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/save_skills_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill5"
+        android:layout_centerHorizontal="true"
+        android:text="Save"/>
+
+</RelativeLayout>

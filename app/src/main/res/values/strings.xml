@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">userInterface</string>
+    <string name="title_activity_user_dashboard">User_Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Fullstack developer</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Jobs Available</string>
+    <string name="menu_gallery">Application status</string>
+    <string name="settings">Settings</string>
+    <string name="menu_slideshow">logout</string>
+
+    <string name="title_activity_navigation_dashboard">navigation_dashboard</string>
+</resources>

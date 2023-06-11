@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/referee_info"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Referee Information"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/purple_500"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name_referee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referee_info"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Referee name"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/ref_name"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Referee_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name_referee"
+        android:layout_marginTop="20dp"
+        android:hint="Referee designation"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/Ref_job"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/referee_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Referee_job"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Referee Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+
+            android:id="@+id/ref_email"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/referee_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/referee_email"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Referee phone"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/ref_phone"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/save_referees_btn"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/referee_phone"
+            android:layout_centerHorizontal="true"
+            android:text="Save"/>
+
+    </RelativeLayout>
+

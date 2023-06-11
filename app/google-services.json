@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "185893501261",
+    "project_id": "postbank-jobs",
+    "storage_bucket": "postbank-jobs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185893501261:android:42c4a0cb0609ebd4531f04",
+        "android_client_info": {
+          "package_name": "com.example.userinterface"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185893501261-t54rpie5hsv720gqlge6el7vh6tb6tet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADymSg-i7RO6wQpqgrReydy-ZG2cF-Rzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185893501261-t54rpie5hsv720gqlge6el7vh6tb6tet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

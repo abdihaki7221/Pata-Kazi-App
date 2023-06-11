@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cover_letter">
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/image_rel"
+       >
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="300dp"
+
+           android:id="@+id/upload_bg"
+           android:src="@drawable/upload"/>
+   </RelativeLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Document"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/image_rel"
+        android:id="@+id/upload_txt"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload your education,transcripts and other professional certificates here"
+        android:id="@+id/upload_instructions"
+        android:layout_below="@+id/upload_txt"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:background="@drawable/curved_bg"
+       android:id="@+id/relative_add_file"
+       android:layout_below="@+id/upload_instructions"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="20dp"
+       android:padding="10dp"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add File"
+           android:textAlignment="center"
+           android:paddingStart="16dp"
+           android:paddingEnd="16dp"
+           android:id="@+id/add_file"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:drawableStart="@drawable/bx_upload"
+          android:drawablePadding="5dp"
+           android:backgroundTint="@color/light_purple"
+           android:textColor="@color/purple_500"
+           android:textAllCaps="false"
+           android:textSize="18sp"
+           android:drawableTint="@color/purple_500"
+           android:layout_centerVertical="true"
+           android:layout_centerInParent="true"
+
+
+           />
+   </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/path"
+        android:layout_below="@id/relative_add_file"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_certificates"
+        android:text="Submit for Review"
+        android:background="@drawable/curved_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

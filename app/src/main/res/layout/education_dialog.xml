@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/education_info"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education Information"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_500"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/education_info"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Field of Study"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/edu_field"
+
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/field"
+        android:layout_marginTop="20dp"
+        android:hint="Enter level of study"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/edu_level"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/institution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/level"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Institution"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/edu_institution"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/start_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/institution"
+        android:layout_marginTop="20dp"
+        android:hint="Enter start year"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/edu_start_year"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/end_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_year"
+        android:layout_marginTop="20dp"
+        android:hint="Enter End year"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/edu_end_year"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/save_education_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_year"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save"/>
+
+</RelativeLayout>

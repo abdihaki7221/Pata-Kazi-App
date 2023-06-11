@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@drawable/bottom_line"
+
+    >
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentStart="true"
+     android:drawableStart="@drawable/bxs_time"
+     android:drawableTint="@color/purple_500"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="5dp"
+     />
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp">
+       <TextView
+           android:id="@+id/title_posted"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentStart="true"
+           android:text="software engineer"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/black"
+           android:layout_marginLeft="20dp"
+
+           />
+
+
+       <TextView
+           android:id="@+id/company_posted"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/title_posted"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="5dp"
+           android:textSize="18sp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:text="Nairobi University"
+
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="-"
+           android:layout_marginTop="5dp"
+           android:layout_below="@+id/title_posted"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:textSize="18sp"
+           android:layout_marginBottom="10dp"
+           android:layout_toRightOf="@id/company_posted"
+           android:id="@+id/dash_2"/>
+       <TextView
+           android:id="@+id/start_year_exp_posted"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:layout_below="@+id/title_posted"
+           android:layout_marginTop="5dp"
+           android:layout_toRightOf="@id/dash_2"
+           android:text="2016"
+           android:textStyle="italic"
+           android:layout_marginBottom="10dp"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="-"
+           android:textSize="18sp"
+           android:layout_below="@+id/title_posted"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="10dp"
+           android:layout_toRightOf="@+id/start_year_exp_posted"
+           android:id="@+id/dash_3"/>
+       <TextView
+           android:id="@+id/end_year_exp_posted"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:text="2022"
+           android:textSize="18sp"
+           android:layout_marginBottom="10dp"
+           android:textStyle="italic"
+           android:layout_below="@id/title_posted"
+           android:layout_toRightOf="@+id/dash_3"
+
+           />
+
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

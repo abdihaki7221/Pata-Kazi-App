@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_profile_info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/second_relative"
+
+        android:layout_marginTop="10dp">
+
+
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/charcoal"
+            android:background="@drawable/bottom_line"
+
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/bxs_user"
+            android:drawableTint="@color/purple_500"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/charcoal"
+            android:layout_below="@+id/about"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bottom_line"
+            android:drawableLeft="@drawable/ic_star"
+            android:drawableTint="@color/purple_500"
+
+
+            />
+
+        <TextView
+            android:id="@+id/Education_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/charcoal"
+            android:layout_below="@+id/skills"
+            android:background="@drawable/bottom_line"
+            android:drawableLeft="@drawable/grad"
+            android:drawableTint="@color/purple_500"
+
+
+            />
+        <TextView
+            android:id="@+id/Experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/charcoal"
+            android:layout_below="@+id/Education_details"
+            android:background="@drawable/bottom_line"
+            android:drawableLeft="@drawable/bxs_time"
+            android:drawableTint="@color/purple_500"
+
+
+
+            />
+        <TextView
+            android:id="@+id/referees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Referees"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/charcoal"
+            android:layout_below="@+id/Experience"
+            android:background="@drawable/bottom_line"
+            android:drawableLeft="@drawable/users_solid"
+            android:drawableTint="@color/purple_500"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/Cover_letter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certificates"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/charcoal"
+            android:layout_below="@+id/referees"
+            android:background="@drawable/bottom_line"
+            android:drawableLeft="@drawable/bx_file"
+            android:drawableTint="@color/purple_500"
+
+            />
+
+        <Button
+            android:id="@+id/submit_application"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cover_letter"
+            android:layout_centerHorizontal="true"
+            android:text="Submit Application"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+
+
+
+
+    <TextView
+        android:id="@+id/education_info"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Experience Info"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_500"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/education_info"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Company name"
+        android:inputType="text"
+
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/Company_exp"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/your_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Company"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Job Title"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/title_exp"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/start_year_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_position"
+        android:layout_marginTop="20dp"
+        android:hint="Enter start date"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+            android:id="@+id/start_year_exp"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/end_year_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_year_job"
+        android:layout_marginTop="20dp"
+        android:hint="Enter end date"
+        android:inputType="text"
+        android:paddingStart="@dimen/text_input_start_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/color_background"
+            android:paddingStart="@dimen/text_input_start_padding"
+            android:layout_width="match_parent"
+
+            android:id="@+id/end_year_exp"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/save_experience_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_year_job"
+        android:layout_centerHorizontal="true"
+        android:text="Save"/>
+
+</RelativeLayout>

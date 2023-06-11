@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".another_dashboard">
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/root_layout"
+  >
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/curved_corners"
+        app:cardElevation="4dp"
+        android:id="@+id/relative_card"
+        app:cardPreventCornerOverlap="false"
+
+
+
+        >
+
+
+
+        <TextView
+            android:id="@+id/option_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_dot"
+            android:drawableTint="@color/white"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:layout_above="@id/search_card"
+            />
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/search_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="28dp"
+            android:background="@color/white"
+
+            android:elevation="12dp"
+            app:cardCornerRadius="40dp">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_corners"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawableTint="@color/purple_500"
+                android:hint="Search jobs here"
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_card"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginBottom="15dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sign"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:layout_gravity="bottom"
+
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/jobs_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_jobs"
+            android:drawableTint="@color/purple_500"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/job_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/ic_job_status"
+            android:gravity="center_horizontal"
+            android:drawableTint="@color/purple_500"
+            />
+
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/ic_news"
+            android:drawableTint="@color/purple_500"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_account"
+            android:drawableTint="@color/purple_500"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

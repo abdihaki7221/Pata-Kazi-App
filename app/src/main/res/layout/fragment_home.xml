@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="150dp"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border_bottom_linear"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:layout_gravity="bottom"
+
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:id="@+id/jobs_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/ic_jobs"
+                android:drawableTint="@color/purple_500"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/job_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/ic_job_status"
+                android:gravity="center_horizontal"
+                android:drawableTint="@color/purple_500"
+                />
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/ic_news"
+                android:drawableTint="@color/purple_500"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/ic_account"
+                android:drawableTint="@color/purple_500"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

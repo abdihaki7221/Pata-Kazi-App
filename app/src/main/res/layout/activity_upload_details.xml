@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_details">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <TextView
+                android:id="@+id/personal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/full_name_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personal_info"
+                android:background="@drawable/personal_edit_text"
+                android:drawableLeft="@drawable/ic_account_small"
+                android:hint="Full name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:drawableTint="@color/purple_500"
+                android:layout_marginTop="10dp"
+
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/email_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/full_name_personal"
+                android:background="@drawable/personal_edit_text"
+                android:drawableLeft="@drawable/ic_email_"
+                android:hint="Email"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/purple_500"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/phone_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_apply"
+                android:background="@drawable/personal_edit_text"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="Phone number"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/purple_500"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/documents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Documents And Attachments"
+                android:layout_below="@+id/phone_apply"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/documents"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="Upload Cv"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+
+                android:drawableEnd="@drawable/ic_upload"
+                android:inputType="textUri"/>
+            <EditText
+                android:id="@+id/Cover_letter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="Upload Cover Letter"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+
+                android:drawableEnd="@drawable/ic_upload"
+                android:inputType="textUri"/>
+
+            <EditText
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cover_letter"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="Upload Education Certificates"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+
+                android:drawableEnd="@drawable/ic_upload"
+                android:inputType="textUri"/>
+
+            <TextView
+                android:id="@+id/work_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Experience"
+                android:layout_below="@+id/education"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/work_experience"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="Organization"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+/>
+            <EditText
+                android:id="@+id/Role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/organization"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="Position"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:drawableTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+
+               />
+
+            <EditText
+                android:id="@+id/from_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Role"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="From Date"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+
+                android:inputType="date"/>
+            <EditText
+                android:id="@+id/to_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/from_date"
+                android:background="@drawable/personal_edit_text"
+
+                android:hint="To Date"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+
+                android:inputType="date"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_below="@+id/to_date"
+                android:layout_marginBottom="28dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
