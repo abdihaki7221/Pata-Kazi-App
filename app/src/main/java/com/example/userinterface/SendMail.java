@@ -6,8 +6,8 @@ import java.util.*;
 
 public class SendMail {
 
-    private static final String EMAIL = "abdihakimomar2017@gmail.com";
-    private static final String PASSWORD = "qwwytdaxbrtgnojv";
+    private static final String EMAIL = "your email";
+    private static final String PASSWORD = "your password";
 
     public static void send(final String recipient,  final int code,final  String Subject) throws MessagingException {
         new Thread(new Runnable() {
