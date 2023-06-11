@@ -1,9 +1,9 @@
 # Pata-Kazi-App
 
-# Welcome to the GitHub repository for our Mobile Recruitment App! 
-# This app is designed to revolutionize the recruitment process by providing a convenient platform for recruiters and job seekers to engage and streamline the hiring workflow.
+Welcome to the GitHub repository for our Mobile Recruitment App! 
+This app is designed to revolutionize the recruitment process by providing a convenient platform for recruiters and job seekers to engage and streamline the hiring workflow.
 
-#With this app:
+With this app:
 1. recruiters can effortlessly post job openings
 2. job seekers can easily browse and apply for those positions
 3. review their application status, and even schedule interview dates.
